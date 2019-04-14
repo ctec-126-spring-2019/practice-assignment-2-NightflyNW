@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!--Author:  Scott Altom
+    Date:   4/12/19
+    Class:  CTEC 126
+    Assignment: Practice Assignment #2
+ -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,14 +15,60 @@
     <title>Practice Assignment 2</title>
 </head>
 <body>
-
-
-
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>Scott Altom</h1>
+        <p>CTEC 126 JavaScript</p>
+        <p>Practice Assignment #2</p> 
+      </div>
+      
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#"></a>
+      </nav>
+      
+      <div class="container" style="margin-top:30px">
+        <div class="row">
+          <div class="col-sm-12">
+                <h3>Practice Assignment #2 Instructions</h3>
+                <p>1. Clone this repository down to your computer from within Visual Studio Code using "git clone" from the Visual Studio Code Command Pallete.</p>
+                <p>2. Add JavaScript to page.html that includes 2 prompts for input from the user. Store each value in a variable. Place the script after the jQuery and Bootstrap JavaScript code.</p>
+                <p>3. Concatenate these 2 input values together and display the result in an alert box.</p>
+                <p>4. Using 2 more prompts, ask the user to enter integer values. Store each value in a variable.</p>
+                <p>5. Add code to add these 2 values together and display the result the JavaScript console using console.log().</p>
+                <p>6. You must **ADD** the values together - don't substitute other mathematical operations such as subtraction, multiplication, or division.</p>
+                <p>7. Page must be valid HTML by passing the W3C validation service.</p>
+                <p>8. Push your changes back to GitHub using "git push" within Visual Studio Code. Use the Visual Studio Code Command Palette for this.</p>     
+          </div>
+        </div>
+      </div>
+      
+      <div class="jumbotron text-center" style="margin-bottom:0">
+        <p>&copy; 2019 Scott Altom</p>
+      </div>
+      
 <!-- jQuery -->
 <script src="js/jquery-3.3.1.min.js"></script>
 <!-- Bootstrap JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <!-- Your JavaScript goes here -->
+
+
+<script>
+    // Add JavaScript to page.html that includes 2 prompts for input from the user. Store each value in a variable. Place the script after the jQuery and Bootstrap JavaScript code.
+    let fname = prompt("What is your frist name?");
+    let lname = prompt("What is your last name?");
+    //3. Concatenate these 2 input values together and display the result in an alert box.
+    window.alert("Hello " + fname + " " + lname)
+</script>
+
+<script>
+    //Using 2 more prompts, ask the user to enter integer values. Store each value in a variable.
+    let theNumber = Number(prompt("Pick a number"));
+    let theNumber2 = Number(prompt("Pick a second number"));
+    //Add code to add these 2 values together and display the result the JavaScript console using console.log().
+    console.log(("Your numbers added together = ") +
+            (theNumber + theNumber2));
+    //You must **ADD** the values together - don't substitute other mathematical operations such as subtraction, multiplication, or division.
+</script>
 
 </body>
 </html>
